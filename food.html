@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
+    <script src="bootstrap/js/bootstrap.min.js" ></script>
+<style> 
+</style>    
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">
+      <img src="/pics/logos/question.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      Name
+    </a>
+</button>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<script>
+function randomize() {
+    var myArray = ["stew","soup","noodle","meat","rice","etc"];
+    var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
+    window.location.href = "/food/" +randomItem;
+}
+</script>
+<div class="bg">
+  <div class="jumbotron" style="text-align: center">
+    <h1>오늘 뭐 먹지?</h1>
+    <img src="/pics/logos/question.png"><br><br>
+    <p>어떤 종류의 음식을 드시고 싶으신가요?</p>
+    <a class="btn btn-primary btn-lg" href="/food/stew" role="button" id="stew" style="color:#fff">찌개</a>
+    <a class="btn btn-success btn-lg" href="/food/soup" role="button" id="soup" style="color:#fff">국물</a>
+    <a class="btn btn-info btn-lg" href="/food/noodle" role="button" id="noodle" style="color:#fff">국수</a>
+    <a class="btn btn-warning btn-lg" href="/food/meat" role="button" id="meat" style="color:#fff">고기</a>
+    <a class="btn btn-danger btn-lg" href="/food/rice" role="button" id="rice" style="color:#fff">밥</a>
+    <br>
+    <br>
+    <p>못 고르시겠나요?</p>
+    <button class="btn btn-lg" style="background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%); color:#fff" 
+    onclick="randomize()">랜덤</button>
+</div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+</body>

@@ -1,0 +1,24 @@
+.profile {
+   margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.profile2 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+ }
+
+.header-style{
+    background-image: linear-gradient(to left top, #aeaeae, #bababa, #c6c5c6, #d3d1d2, #e0dddd);
+}
+
+.h2{
+    color: aqua;
+}
+.mf{
+    color: black;
+}
+
+.hovering:hover{
+    color: white;
+}
